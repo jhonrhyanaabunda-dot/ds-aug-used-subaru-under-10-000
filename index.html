@@ -42,6 +42,16 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "VideoObject",
+      "@id": "https://www.subarudalton.com/used-subaru-under-10000-national-city/#video-gm",
+      "name": "Antonio Luna, General Manager — Dalton Subaru National City",
+      "description": "Antonio Luna, general manager of Dalton Subaru National City, introducing the store from the Mile of Cars and talking through Subaru reliability.",
+      "thumbnailUrl": "https://www.subarudalton.com/used-subaru-under-10000-national-city/gm-antonio-luna-poster.jpg",
+      "uploadDate": "2026-08-01",
+      "contentUrl": "https://www.subarudalton.com/used-subaru-under-10000-national-city/gm-antonio-luna.mp4",
+      "publisher": { "@id": "https://www.subarudalton.com/#dealer" }
+    },
+    {
       "@type": "Article",
       "@id": "https://www.subarudalton.com/used-subaru-under-10000-national-city/#article",
       "headline": "Used Subaru Under $10,000 in National City",
@@ -1299,6 +1309,33 @@
     }
     .btn:hover .arrow { transform: none; }
   }
+
+  /* ---------- July-template: hero CTA buttons ---------- */
+  .hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin: 0 0 32px; }
+  .hero-cta a { display: inline-flex; align-items: center; gap: 8px; font-family: var(--display); font-weight: 600; font-size: 16px; text-decoration: none; border-radius: 999px; padding: 14px 28px; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+  .hero-cta a.primary { background: var(--blue); color: #fff; border: 1px solid var(--blue); }
+  .hero-cta a.primary:hover { background: var(--blue-deep); border-color: var(--blue-deep); }
+  .hero-cta a.secondary { background: transparent; color: var(--blue); border: 1px solid var(--rule); }
+  .hero-cta a.secondary:hover { border-color: var(--blue); color: var(--blue-deep); }
+  .hero-cta .arrow { transition: transform .2s ease; }
+  .hero-cta a:hover .arrow { transform: translateX(3px); }
+
+  /* ---------- July-template: disclosures ---------- */
+  .disclosures {
+    background: var(--paper);
+    border-top: 1px solid var(--rule);
+    padding: 40px 0 64px;
+  }
+  .disclosures .wrap { max-width: 920px; }
+  .disclosures h4 {
+    font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--muted); font-weight: 700; margin: 0 0 16px;
+  }
+  .disclosures p, .disclosures li {
+    font-size: 12.5px; line-height: 1.65; color: var(--muted); margin: 0 0 12px;
+  }
+  .disclosures ul { padding-left: 18px; margin: 0; }
+  .disclosures strong { color: var(--ink-soft); }
 </style>
 </head>
 <body>
@@ -1310,13 +1347,11 @@
   <div class="wrap">
     <div class="eyebrow"><span class="pip"></span> Used / CPO · Dalton Subaru National City</div>
     <h1>Used Subaru <em>under $10,000</em> in National City.</h1>
-    <p class="deck">Dalton Subaru National City lists budget-friendly pre-owned Subarus, older Outbacks, Foresters, Imprezas, and trade-ins from other brands, at 2829 National City Blvd on the Mile of Cars. Inventory and pricing in this range change daily, so the fastest way to see what fits your budget is to filter live listings at subarudalton.com.</p>
+    <p class="deck">Yes, usually a 2012&ndash;2016 Outback, Forester, or Impreza with 110,000-plus miles. At this price you are buying condition and service history, not badge. We will tell you which ones are worth it.</p>
 
-    <div class="hero-meta">
-      <div class="item"><div class="lbl">Address</div><div class="val">2829 National City Blvd<small>National City, CA 91950</small></div></div>
-      <div class="item"><div class="lbl">Sales Hours</div><div class="val">Mon-Sat 8:30-8<small>Sun 10-6</small></div></div>
-      <div class="item"><div class="lbl">Contact</div><div class="val"><a class="tel" href="https://www.subarudalton.com/contactus.aspx">Contact Us</a><small>Mile of Cars · National City</small></div></div>
-      <div class="item"><div class="lbl">Reviews</div><div class="val">4.7 ★ · 4,426<small>Google · Dalton Subaru</small></div></div>
+    <div class="hero-cta">
+      <a class="primary" href="https://www.subarudalton.com/searchused.aspx">Browse used inventory <span class="arrow">&rarr;</span></a>
+      <a class="secondary" href="https://www.subarudalton.com/contactus.aspx">Contact Us</a>
     </div>
   </div>
 
@@ -1332,6 +1367,17 @@
     <figcaption class="visually-hidden">A pre-owned Subaru at Dalton Subaru National City on the National City Mile of Cars, the kind of budget all-wheel-drive vehicle that lands under $10,000, serving San Diego County.</figcaption>
   </figure>
 </header>
+
+<nav class="crumbs" aria-label="Breadcrumb">
+  <div class="wrap">
+    <ol>
+      <li><a href="https://www.subarudalton.com/">Home</a></li>
+      <li><a href="https://www.subarudalton.com/searchused-national-city-ca.aspx">Used Inventory</a></li>
+      <li aria-current="page">Used Subaru Under $10,000 in National City</li>
+    </ol>
+  </div>
+</nav>
+
 
 <!-- ARTICLE BODY -->
 <main class="wrap" id="main-content">
@@ -1361,7 +1407,15 @@
         <div class="section-num"><span>01</span><span>From the used-car desk</span></div>
         <h2 class="section-h">Can you actually find a used Subaru <em>under $10,000?</em></h2>
         <p class="lede">Yes, with the right expectations. A budget under $10,000 typically points you toward higher-mileage or older-model-year Subarus, plus pre-owned trade-ins from other brands that have landed on our lot here in National City. Because every Subaru is built around standard Symmetrical All-Wheel Drive and a reputation for going the distance, even an older example can give San Diego County drivers years of dependable service.</p>
-        <p>Let me be straight with you about what that price tier really looks like. When our used-car team walks the lot at the start of the week to price and stage the budget rows, the Subarus we tag under $10,000 are almost always 2012–2016 model years carrying 110,000 miles or more. That isn't a knock, it's just the math of the used market. A clean three-year-old Outback in Southern California simply doesn't land here for eight grand. What does land here, and what we actively look for, is the older AWD wagon or compact that's been maintained on schedule and has a paper trail to prove it.</p>
+        <p>Here's what that price tier really looks like. The Subarus we tag under $10,000 are almost always 2012–2016 model years carrying 110,000 miles or more. That isn't a knock, it's just the math of the used market.</p>
+        <p>A clean three-year-old Outback in Southern California simply doesn't land here for eight grand. What does land here, and what we actively look for, is the older AWD wagon or compact that's been maintained on schedule and has a paper trail to prove it.</p>
+
+        <figure class="section-image" style="margin:32px 0 28px;position:relative;">
+          <div class="frame" style="aspect-ratio:auto;border:none;background:transparent;max-height:60vh;overflow:hidden;border-radius:12px;">
+            <img src="body-outback-bridge.webp" alt="Blue Subaru Outback driving across a bridge over water near coastal hills, standard Symmetrical AWD, at Dalton Subaru National City" loading="lazy" decoding="async" style="width:100%;height:56vh;display:block;object-fit:cover;object-position:center 45%;">
+          </div>
+          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:left;max-width:70ch;">The Outback line is where most budget Subaru shoppers land. Standard Symmetrical AWD came on every one of them, which is a large part of why the older cars still hold up.</figcaption>
+        </figure>
 
         <h3>What you won't find is a guessing game</h3>
         <p>Vehicles in the under-$10,000 tier move quickly and turn over often, so the smartest first step is to view live inventory online rather than assume a specific model and year are sitting on the lot today. If something in your budget is here, you'll see it, with photos, the history report, and the real price, at <a href="https://www.subarudalton.com/searchused.aspx" rel="noopener">subarudalton.com</a>.</p>
@@ -1378,6 +1432,18 @@
         <div class="section-num"><span>02</span><span>In the service drive</span></div>
         <h2 class="section-h">What our team does <em>before a budget Subaru hits the lot</em>.</h2>
         <p class="lede">The under-$10,000 row is where reputations get made or broken, so this is the inventory we scrutinize hardest. Here's what happens between a car arriving and you seeing it listed.</p>
+        <figure class="section-image" id="video-gm" style="margin:32px 0 28px;display:flex;flex-direction:column;align-items:center;">
+          <div style="width:100%;max-width:340px;aspect-ratio:9/16;overflow:hidden;border-radius:16px;background:#000;">
+            <video
+              src="gm-antonio-luna.mp4"
+              poster="gm-antonio-luna-poster.jpg"
+              controls playsinline preload="none"
+              style="width:100%;height:100%;display:block;object-fit:cover;background:#000;"
+              aria-label="Antonio Luna, general manager of Dalton Subaru National City, outside the showroom on the Mile of Cars"></video>
+          </div>
+          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:center;max-width:60ch;">Antonio Luna, general manager of Dalton Subaru National City, outside the showroom on the Mile of Cars. The same inspection runs on a budget Subaru as on anything else we retail.</figcaption>
+        </figure>
+
 
         <div class="trims">
           <article class="trim flagship">
@@ -1651,6 +1717,13 @@
         </div>
 
         <p>Availability and pricing change daily. For current options in your budget, view the <a href="https://www.subarudalton.com/searchused.aspx">live inventory online</a> or stop by the store on the Mile of Cars.</p>
+      
+        <figure class="section-image" style="margin:32px 0 28px;position:relative;">
+          <div class="frame" style="aspect-ratio:auto;border:none;background:transparent;max-height:60vh;overflow:hidden;border-radius:12px;">
+            <img src="body-forester-street.jpg" alt="Gray Subaru Forester driving through a city street corner, the kind of pre-owned Subaru sold at Dalton Subaru National City" loading="lazy" decoding="async" style="width:100%;height:56vh;display:block;object-fit:cover;object-position:center 55%;">
+          </div>
+          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:left;max-width:70ch;">The Forester is the one we most often point budget families toward: tall roof, big glass, and a footprint that still fits a National City driveway.</figcaption>
+        </figure>
       </section>
 
       <!-- §06 Why an older Subaru still makes sense in San Diego County -->
@@ -1943,6 +2016,23 @@
       <span>Hours <strong>Mon-Sat 8:30-8 · Sun 10-6</strong></span>
       <span>Visit <a class="tel" href="https://maps.google.com/?q=2829+National+City+Blvd+National+City+CA+91950" rel="noopener"><strong>2829 National City Blvd</strong></a></span>
     </div>
+  </div>
+</section>
+
+<section class="disclosures">
+  <div class="wrap">
+    <h4>Disclosures</h4>
+    <ul>
+      <li><strong>Inventory &amp; availability.</strong> Budget pre-owned vehicles under $10,000 are the fastest-moving part of our lot and turn over daily. This page is not a guarantee that any specific model, year, or price is currently in stock. Confirm live availability at <a href="https://www.subarudalton.com/searchused.aspx" rel="noopener">subarudalton.com used inventory</a> before visiting.</li>
+      <li><strong>Pricing &amp; examples.</strong> We do not publish payment, APR, or financing figures on this page because those terms change. Any dollar figures used to illustrate total cost of ownership are examples, not quotes, listings, or offers on any specific vehicle. A given car's price is its window sticker plus the offer running that day. All financing is subject to credit approval. For independent value research, see <a href="https://www.kbb.com" rel="noopener">kbb.com</a> and <a href="https://www.edmunds.com" rel="noopener">edmunds.com</a>.</li>
+      <li><strong>Model years &amp; mileage.</strong> The 2012&ndash;2016 model-year range and 110,000-plus mileage figures describe what typically lands in this price tier; they are not a specification of current stock. Older-generation references (2010&ndash;2014 Outback, 2009&ndash;2013 Forester, 2013&ndash;2014 Crosstrek) describe the used market generally. Verify year, mileage, and condition on the individual vehicle.</li>
+      <li><strong>Certified Pre-Owned.</strong> The Subaru 152-point inspection, 7-year/100,000-mile limited powertrain warranty, CARFAX report, and 24/7 roadside assistance apply to Subaru Certified Pre-Owned vehicles only, per Subaru of America program terms. Powertrain coverage runs from the vehicle's original in-service date, not the purchase date. Budget pre-owned vehicles under $10,000 are generally sold as-is or with remaining factory coverage only. See <a href="https://www.subaru.com" rel="noopener">subaru.com</a> for full program terms.</li>
+      <li><strong>Safety &amp; recalls.</strong> Top Safety Pick recognition reflects Insurance Institute for Highway Safety (<a href="https://www.iihs.org" rel="noopener">iihs.org</a>) testing of specific Subaru models and model years, and does not apply to every used Subaru. Check open recalls for any VIN free at <a href="https://www.nhtsa.gov" rel="noopener">nhtsa.gov</a> before purchase.</li>
+      <li><strong>Total cost of ownership.</strong> The point that ownership cost includes fuel, maintenance, and repairs beyond purchase price reflects U.S. Department of Energy guidance at <a href="https://www.fueleconomy.gov" rel="noopener">fueleconomy.gov</a>. Actual costs vary by vehicle, condition, and use.</li>
+      <li><strong>Rating &amp; reviews.</strong> The 4.7-star Google rating across roughly 4,426 reviews reflects Dalton Subaru National City's Google Business Profile as of publication. Review counts are pulled live and change over time; confirm the current figure on the live Google profile.</li>
+      <li><strong>Hours.</strong> Sales hours (Monday&ndash;Saturday 8:30 AM&ndash;8:00 PM, Sunday 10:00 AM&ndash;6:00 PM) are current at publication and subject to change on holidays. Confirm hours before visiting.</li>
+      <li>Published 2026-08-01 by Dalton Subaru National City, 2829 National City Blvd, National City, CA 91950.</li>
+    </ul>
   </div>
 </section>
 
