@@ -291,7 +291,7 @@
           "name": "Should I buy the cheapest used Subaru on the lot?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Not always. On an older AWD vehicle, deferred maintenance, timing service, head gaskets, matched tires, struts, can make a cheaper car more expensive over three years. We'll sometimes steer you toward a slightly pricier unit with documented service because it's genuinely the better value. Run total cost of ownership, not just sticker."
+            "text": "Not always. On an older AWD vehicle, deferred maintenance, timing service, head gaskets, matched tires, struts, can make a cheaper car more expensive over three years. We'll sometimes steer you toward a slightly pricier unit with documented service because it's the better value. Run total cost of ownership, not just sticker."
           }
         },
         {
@@ -1005,8 +1005,8 @@
     font-weight: 700;
   }
 
-  /* ---------- Why Findlay band ---------- */
-  .findlay-band {
+  /* ---------- Why-us band ---------- */
+  .why-band {
     background: var(--ink);
     color: var(--white);
     margin: 56px 0 0;
@@ -1015,22 +1015,22 @@
     position: relative;
     overflow: hidden;
   }
-  .findlay-band::before {
+  .why-band::before {
     content: "";
     position: absolute; right: -10%; top: -30%;
     width: 60%; aspect-ratio: 1;
     background: radial-gradient(circle at center, rgba(25,113,212,.4), rgba(25,113,212,0) 60%);
     pointer-events: none;
   }
-  .findlay-band .wrap { position: relative; }
-  .findlay-band .eyebrow { color: #6db3ff; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 24px; font-weight: 600; }
-  .findlay-band h2 {
+  .why-band .wrap { position: relative; }
+  .why-band .eyebrow { color: #6db3ff; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 24px; font-weight: 600; }
+  .why-band h2 {
     font-family: var(--display); font-weight: 700;
     font-size: clamp(34px, 4.4vw, 54px); line-height: 1.05; letter-spacing: -0.025em;
     margin: 0 0 20px; max-width: 720px; text-wrap: balance;
   }
-  .findlay-band h2 em { font-style: normal; color: #9cc8ff; font-weight: 700; }
-  .findlay-band .band-deck {
+  .why-band h2 em { font-style: normal; color: #9cc8ff; font-weight: 700; }
+  .why-band .band-deck {
     font-family: var(--display);
     font-weight: 400;
     font-size: 19px;
@@ -1057,16 +1057,16 @@
   .trust-grid .item .num small { font-size: 22px; color: #9cc8ff; }
   .trust-grid .item .lbl { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,.6); margin-top: 16px; line-height: 1.55; }
 
-  .findlay-extras {
+  .why-extras {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 48px;
     margin-top: 56px;
   }
-  .findlay-extras h5 { font-family: var(--display); font-size: 20px; font-weight: 500; margin: 0 0 20px; color: var(--white); padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.12); }
-  .findlay-extras p { color: rgba(255,255,255,.75); font-size: 14px; line-height: 1.7; margin: 0 0 16px; }
-  .findlay-extras p:last-child { margin-bottom: 0; }
-  .findlay-extras strong { color: var(--white); font-weight: 600; }
+  .why-extras h5 { font-family: var(--display); font-size: 20px; font-weight: 500; margin: 0 0 20px; color: var(--white); padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.12); }
+  .why-extras p { color: rgba(255,255,255,.75); font-size: 14px; line-height: 1.7; margin: 0 0 16px; }
+  .why-extras p:last-child { margin-bottom: 0; }
+  .why-extras strong { color: var(--white); font-weight: 600; }
 
   /* ---------- FAQ accordion ---------- */
   .faq { margin: 28px 0; }
@@ -1244,7 +1244,7 @@
     .trust-grid .item:nth-child(2) { padding-left: 24px !important; border-right: none; }
     .trust-grid .item:nth-child(3) { padding-left: 0 !important; border-bottom: none; }
     .trust-grid .item:nth-child(4) { padding-left: 24px !important; border-right: none; border-bottom: none; }
-    .findlay-extras { gap: 36px; }
+    .why-extras { gap: 36px; }
     .cross-table { overflow-x: auto; }
     .cross-table table { min-width: 720px; }
   }
@@ -1262,10 +1262,10 @@
     .trims { grid-template-columns: 1fr; border: none; }
     .trim { border-right: none !important; border-bottom: 1px solid var(--rule) !important; padding: 28px 0; }
     .trim:last-child { border-bottom: none !important; }
-    .findlay-extras { grid-template-columns: 1fr; gap: 36px; }
-    .findlay-band { padding: 48px 0 40px; }
-    .findlay-band h2 { font-size: 32px; }
-    .findlay-band .band-deck { font-size: 17px; }
+    .why-extras { grid-template-columns: 1fr; gap: 36px; }
+    .why-band { padding: 48px 0 40px; }
+    .why-band h2 { font-size: 32px; }
+    .why-band .band-deck { font-size: 17px; }
     .trust-grid { grid-template-columns: 1fr 1fr; padding-top: 36px; margin-top: 44px; }
     .trust-grid .item { padding: 20px 16px 20px 0 !important; }
     .trust-grid .item:nth-child(2) { padding-left: 16px !important; }
@@ -1297,8 +1297,8 @@
   /* ---------- Tel links ---------- */
   a.tel { color: inherit; text-decoration: none; }
   a.tel:hover { color: var(--blue); }
-  .findlay-band a.tel { color: inherit; }
-  .findlay-band a.tel:hover { color: #9cc8ff; }
+  .why-band a.tel { color: inherit; }
+  .why-band a.tel:hover { color: #9cc8ff; }
 
   /* ---------- Accessibility ---------- */
   .visually-hidden {
@@ -1334,7 +1334,7 @@
       width: 100% !important;
     }
     /* Specific known-problematic components - force them to behave */
-    .findlay-band, .closing-cta, .findlay-band .wrap, .closing-cta .wrap {
+    .why-band, .closing-cta, .why-band .wrap, .closing-cta .wrap {
       max-width: 100% !important;
     }
     /* Trim cards must be single-column on mobile and respect parent width */
@@ -1518,13 +1518,13 @@
     <nav class="toc" aria-label="Table of contents">
       <h4>In this guide</h4>
       <ol>
-        <li><a href="#delivery-four">Can you find one under $10k?</a></li>
-        <li><a href="#whats-new">Before a budget Subaru lists</a></li>
-        <li><a href="#charging-levels">Cheapest isn't always smartest</a></li>
-        <li><a href="#mojave-summers">Budget pre-owned vs. CPO</a></li>
-        <li><a href="#range-heat">Models to watch in this range</a></li>
-        <li><a href="#public-charging">Why an older Subaru makes sense</a></li>
-        <li><a href="#shop-findlay">How to find yours</a></li>
+        <li><a href="#overview">Can you find one under $10k?</a></li>
+        <li><a href="#before-listing">Before a budget Subaru lists</a></li>
+        <li><a href="#cheapest-vs-smartest">Cheapest isn't always smartest</a></li>
+        <li><a href="#budget-vs-cpo">Budget pre-owned vs. CPO</a></li>
+        <li><a href="#models">Models to watch in this range</a></li>
+        <li><a href="#why-older-subaru">Why an older Subaru makes sense</a></li>
+        <li><a href="#how-to-find">How to find yours</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#sources">References</a></li>
       </ol>
@@ -1534,13 +1534,13 @@
     <div class="body">
 
       <!-- §01 Can you actually find a used Subaru under $10,000? -->
-      <section class="s" id="delivery-four">
+      <section class="s" id="overview">
         <div class="section-num"><span>01</span><span>From the used-car desk</span></div>
         <h2 class="section-h">Can you actually find a used Subaru <em>under $10,000?</em></h2>
 
         <p class="lede">Yes, with the right expectations. A budget under $10,000 typically points you toward higher-mileage or older-model-year Subarus, plus pre-owned trade-ins from other brands that have landed on our lot here in National City. Because every Subaru is built around standard Symmetrical All-Wheel Drive and a reputation for going the distance, even an older example can give San Diego County drivers years of dependable service.</p>
-        <p>Here's what that price tier really looks like. The Subarus we tag under $10,000 are almost always 2012–2016 model years carrying 110,000 miles or more. That isn't a knock, it's just the math of the used market.</p>
-        <p>A clean three-year-old Outback in Southern California simply doesn't land here for eight grand. What does land here, and what we actively look for, is the older AWD wagon or compact that's been maintained on schedule and has a paper trail to prove it.</p>
+        <p>Here's what that price tier looks like. The Subarus we tag under $10,000 are almost always 2012–2016 model years carrying 110,000 miles or more. That isn't a knock, it's just the math of the used market.</p>
+        <p>A clean three-year-old Outback in Southern California doesn't land here for eight grand. What does land here, and what we actively look for, is the older AWD wagon or compact that's been maintained on schedule and has a paper trail to prove it.</p>
 
         <figure class="section-image" style="margin:32px 0 28px;position:relative;">
           <div class="frame" style="aspect-ratio:auto;border:none;background:transparent;max-height:60vh;overflow:hidden;border-radius:12px;">
@@ -1560,7 +1560,7 @@
       </section>
 
       <!-- §02 What our team does before a budget Subaru hits the lot -->
-      <section class="s" id="whats-new">
+      <section class="s" id="before-listing">
         <div class="section-num"><span>02</span><span>In the service drive</span></div>
         <h2 class="section-h">What our team does <em>before a budget Subaru hits the lot</em>.</h2>
         <p class="lede">The under-$10,000 row is where reputations get made or broken, so this is the inventory we scrutinize hardest. Here's what happens between a car arriving and you seeing it listed.</p>
@@ -1609,7 +1609,7 @@
       </section>
 
       <!-- §03 Engines, drivetrain & fuel economy -->
-      <section class="s" id="charging-levels">
+      <section class="s" id="cheapest-vs-smartest">
         <div class="section-num"><span>03</span><span>The contrarian truth</span></div>
         <h2 class="section-h">Cheapest <em>isn't always the smartest buy</em>.</h2>
         <p class="lede">Here's the catch most budget shoppers get wrong, and I'll tell you the same thing I tell my own family. The temptation under $10,000 is to chase the lowest number on the windshield. But on an older AWD vehicle, the sticker price is only the down payment on ownership.</p>
@@ -1699,7 +1699,7 @@
       </section>
 
       <!-- §04 Safety: what the ratings actually say -->
-      <section class="s" id="mojave-summers">
+      <section class="s" id="budget-vs-cpo">
         <div class="section-num"><span>04</span><span>Two tiers</span></div>
         <h2 class="section-h">Budget pre-owned <em>vs. Certified Pre-Owned</em>.</h2>
         <p class="lede">It helps to know the difference between the two tiers you'll see at Dalton Subaru National City, because price and peace of mind sit on a sliding scale.</p>
@@ -1715,7 +1715,7 @@
           <li>24/7 roadside assistance</li>
           <li>A 152-point mechanical and appearance inspection</li>
         </ul>
-        <p>Subaru publishes the full CPO program terms on its corporate site (<a href="https://www.subaru.com" rel="noopener">subaru.com</a>), and it's worth reading before you decide which lane fits you. If your budget has a little room to grow, CPO trades a higher upfront price for far more coverage, and on a vehicle you plan to keep five years, that warranty can outweigh the price difference. If your budget genuinely doesn't have room, our budget pre-owned vehicles are the right lane, and our team can help you find the strongest option in your range.</p>
+        <p>Subaru publishes the full CPO program terms on its corporate site (<a href="https://www.subaru.com" rel="noopener">subaru.com</a>), and it's worth reading before you decide which lane fits you. If your budget has a little room to grow, CPO trades a higher upfront price for far more coverage, and on a vehicle you plan to keep five years, that warranty can outweigh the price difference. If your budget doesn't have room, our budget pre-owned vehicles are the right lane, and our team can help you find the strongest option in your range.</p>
 
         <!-- Desktop: budget vs CPO comparison table -->
         <div class="cross-table">
@@ -1817,7 +1817,7 @@
       </aside>
 
       <!-- §05 Used Subaru models to watch in this range -->
-      <section class="s" id="range-heat">
+      <section class="s" id="models">
         <div class="section-num"><span>05</span><span>The lineup at this price</span></div>
         <h2 class="section-h">Used Subaru models <em>to watch in this range</em>.</h2>
         <p class="lede">Inventory in the under-$10,000 tier turns over constantly, so check live listings at subarudalton.com for what's available today. These are the models budget Subaru shoppers in San Diego County ask about most, with the realistic picture of what you're buying at this price.</p>
@@ -1839,7 +1839,7 @@
           <article class="trim">
             <div class="engine-row"><span class="engine">Forester</span><span class="badge">Family pick</span></div>
             <h4 class="name">Used Subaru Forester</h4>
-            <p class="equip"><strong>Roomy and easy to park.</strong> The 2009–2013 Forester is the sweet spot under $10,000. Tall roof, big glass, genuinely useful cargo space, it's the budget Subaru we most often recommend to families who want height without bulk, and it fits a National City driveway.</p>
+            <p class="equip"><strong>Roomy and easy to park.</strong> The 2009–2013 Forester is the sweet spot under $10,000. Tall roof, big glass, useful cargo space, it's the budget Subaru we most often recommend to families who want height without bulk, and it fits a National City driveway.</p>
           </article>
           <article class="trim">
             <div class="engine-row"><span class="engine">Impreza</span><span class="badge">Lowest miles</span></div>
@@ -1871,7 +1871,7 @@
       </section>
 
       <!-- §06 Why an older Subaru still makes sense in San Diego County -->
-      <section class="s" id="public-charging">
+      <section class="s" id="why-older-subaru">
         <div class="section-num"><span>06</span><span>Why it still makes sense</span></div>
         <h2 class="section-h">Why an older Subaru still makes sense <em>in San Diego County</em>.</h2>
         <p class="lede">There's a reason these cars hold up. Standard all-wheel drive plus a low center of gravity from the boxer engine give even older Subarus stable, predictable handling, and the local climate is unusually kind to a used car.</p>
@@ -1880,7 +1880,7 @@
         <p>The Insurance Institute for Highway Safety (<a href="https://www.iihs.org" rel="noopener">iihs.org</a>) has awarded multiple Subaru models Top Safety Pick honors over the years. You can also look up any used Subaru's open-recall status for free by VIN at the National Highway Traffic Safety Administration's site (<a href="https://www.nhtsa.gov" rel="noopener">nhtsa.gov</a>),we do exactly that on every car before it lists, and we'd encourage you to verify it yourself.</p>
 
         <h3>The climate is on your side</h3>
-        <p>For Southern California specifically, the calculus is friendly to an older Subaru. We don't have the road salt and corrosion that eats undercarriages in the Snow Belt, so a clean, well-maintained 2013 Outback here often has years of life that the same car wouldn't have in Buffalo. That's part of why a budget AWD Subaru is a genuinely sensible buy in National City, Chula Vista, and across San Diego County, the climate is on your side.</p>
+        <p>For Southern California specifically, the calculus is friendly to an older Subaru. We don't have the road salt and corrosion that eats undercarriages in the Snow Belt, so a clean, well-maintained 2013 Outback here often has years of life that the same car wouldn't have in Buffalo. That's part of why a budget AWD Subaru is a sensible buy in National City, Chula Vista, and across San Diego County, the climate is on your side.</p>
 
         <blockquote class="pull">
           A clean, well-maintained 2013 Outback here often has years of life the same car wouldn't have in Buffalo. No road salt, no corrosion eating the undercarriage.
@@ -1894,10 +1894,10 @@
       </section>
 
       <!-- §07 How to find your used Subaru under $10,000 -->
-      <section class="s" id="shop-findlay">
+      <section class="s" id="how-to-find">
         <div class="section-num"><span>07</span><span>Buying at Dalton</span></div>
         <h2 class="section-h">How to find your used Subaru <em>under $10,000</em>.</h2>
-        <p class="lede">We are at <strong>2829 National City Blvd, National City, CA 91950</strong>, on the National City Mile of Cars, serving National City, Chula Vista, and San Diego County. Here's the short, clear path to a budget Subaru that actually fits.</p>
+        <p class="lede">We are at <strong>2829 National City Blvd, National City, CA 91950</strong>, on the National City Mile of Cars, serving National City, Chula Vista, and San Diego County. Here's the short, clear path to a budget Subaru that fits.</p>
 
         <div class="spec-strip stats">
           <div class="item"><div class="num">4.7<small> ★</small></div><div class="lbl">Google rating across 4,398 reviews</div></div>
@@ -1953,10 +1953,10 @@
 </main>
 
 <!-- Why us full-bleed band -->
-<section class="findlay-band">
+<section class="why-band">
   <div class="wrap">
     <div class="eyebrow">Dalton Subaru National City</div>
-    <h2>Deep roots on the <em>Mile of Cars</em>.</h2>
+    <h2>The store behind the <em>budget lot</em>.</h2>
     <p class="band-deck">The same store local owners knew as Frank Subaru, now operating as Dalton Subaru National City under the Dalton Corporation: same people, same service drive, same phone line. We serve National City, Chula Vista, and the wider San Diego County area.</p>
 
     <div class="trust-grid">
@@ -1978,7 +1978,7 @@
       </div>
     </div>
 
-    <div class="findlay-extras">
+    <div class="why-extras">
       <div>
         <h5>The used-car desk</h5>
         <p>Our used-car team, led by Used Car Manager Juan Reynoso, pulls the CARFAX or AutoCheck and inspects the AWD driveline on every car before it lists. Branded titles, open recalls, and odometer trouble go to wholesale, not the budget row.</p>
@@ -2046,7 +2046,7 @@
             <summary>Should I buy the cheapest used Subaru on the lot?</summary>
             <div class="answer">
               <p>Not always. On an older AWD vehicle, deferred maintenance, timing service, head gaskets, matched tires, struts, can make a cheaper car more expensive over three years.</p>
-              <p>We'll sometimes steer you toward a slightly pricier unit with documented service because it's genuinely the better value. Run total cost of ownership, not just sticker.</p>
+              <p>We'll sometimes steer you toward a slightly pricier unit with documented service because it's the better value. Run total cost of ownership, not just sticker.</p>
             </div>
           </details>
 
