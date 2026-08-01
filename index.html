@@ -691,6 +691,20 @@
   .glance dt { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
   .glance dd { margin: 0; font-family: var(--display); font-size: 17px; color: var(--ink); font-weight: 500; }
 
+  /* ---------- July-template: sidebar rail ---------- */
+  .rail-action { display:block;text-decoration:none;color:#fff;background:var(--blue);border-radius:var(--radius-md,14px);padding:20px;margin-bottom:16px;transition:background .15s ease;max-width:240px;width:100%;min-width:0;margin-left:auto;margin-right:auto;overflow-wrap:break-word; }
+  .rail-action:hover { background:var(--blue-deep) }
+  .rail-action .lbl { font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.8);display:block;margin-bottom:8px }
+  .rail-action strong { font-family:var(--display);font-size:21px;font-weight:600;line-height:1.2;color:#fff;display:block }
+  .rail-action .sub { font-size:13px;line-height:1.5;color:rgba(255,255,255,.85);display:block;margin-top:8px }
+  .rail-action .rail-action__cta { display:inline-block;margin-top:14px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#fff }
+  .rail-card { border:1px solid var(--rule);border-radius:var(--radius-md,14px);background:var(--white,#fff);padding:18px;margin-bottom:16px;max-width:240px;width:100%;min-width:0;margin-left:auto;margin-right:auto;overflow-wrap:break-word; }
+  .rail-card .lbl { font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:8px }
+  .rail-card strong { font-family:var(--display);font-size:18px;font-weight:600;line-height:1.2;color:var(--ink);display:block }
+  .rail-card .sub { font-size:13px;line-height:1.5;color:var(--muted);display:block;margin-top:4px }
+  .rail-card .rail-link { display:inline-block;margin-top:12px;font-size:13px;font-weight:600;color:var(--blue);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s ease }
+  .rail-card .rail-link:hover { border-bottom-color:var(--blue) }
+
   /* ---------- July-template: intro box ---------- */
   p.tldr { font-family: var(--display); font-size: 17px; font-weight: 600; line-height: 1.5; color: var(--blue-deep); background: var(--blue-soft); border-left: 3px solid var(--blue); padding: 14px 18px; margin: 0 0 28px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
   p.tldr::before { content: ""; display: none; }
@@ -1227,7 +1241,7 @@
     margin: 0 0 20px; text-wrap: balance;
   }
   .closing-cta h2 em { font-style: normal; color: var(--blue); font-weight: 700; }
-  .closing-cta p { font-size: 19px; color: var(--ink-soft); max-width: 560px; margin: 0 auto 36px; line-height: 1.55; }
+  .closing-cta p { font-size: 19px; color: var(--ink-soft); max-width: 900px; margin: 0 auto 36px; line-height: 1.55; }
   .closing-cta .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
   .closing-cta .btn.primary { background: var(--blue); color: var(--white); border-color: var(--blue); }
   .closing-cta .btn.primary:hover { background: var(--blue-deep); border-color: var(--blue-deep); }
@@ -1919,27 +1933,23 @@
     </div>
 
     <!-- Right gutter -->
-    <aside class="gutter" aria-label="Trust signals">
-      <div class="chip">
-        <div class="lbl">Google rating</div>
-        <div class="stars">★★★★★</div>
-        <strong style="font-size:28px;">4.7</strong>
-        <div class="sub">Across 4,448 customer reviews</div>
+    <aside class="gutter" aria-label="Shop the used lot">
+      <a class="rail-action" href="https://www.subarudalton.com/searchused.aspx">
+        <span class="lbl">Browse inventory</span>
+        <strong>Shop the used lot</strong>
+        <span class="sub">Filter the pre-owned lineup by price, updated daily.</span>
+        <span class="rail-action__cta">View inventory &rarr;</span>
+      </a>
+      <div class="rail-card">
+        <span class="lbl">Visit us</span>
+        <strong>2829 National City Blvd</strong>
+        <span class="sub">National City, CA 91950. On the Mile of Cars.</span>
+        <a class="rail-link" href="https://www.subarudalton.com/contactus.aspx">Contact us &rarr;</a>
       </div>
-      <div class="chip">
-        <div class="lbl">Contact us</div>
-        <a class="tel" href="https://www.subarudalton.com/contactus.aspx"><strong style="font-family:var(--display); font-size:22px;">Contact Us</strong></a>
-        <div class="sub">Confirm a car on the lot · get the history report</div>
-      </div>
-      <div class="chip">
-        <div class="lbl">What lands here</div>
-        <strong style="font-size:18px; line-height:1.2;">Under $10,000</strong>
-        <div class="sub">Often 2012–2016 · 110k+ miles · standard AWD</div>
-      </div>
-      <div class="chip">
-        <div class="lbl">Models to watch</div>
-        <strong style="font-size:18px; line-height:1.2;">Outback · Forester · Impreza</strong>
-        <div class="sub">Plus the occasional early Crosstrek</div>
+      <div class="rail-card">
+        <span class="lbl">Trust</span>
+        <strong>4.7 &#9733; · 4,448 reviews</strong>
+        <span class="sub">What budget buyers say about shopping here.</span>
       </div>
     </aside>
   </div>
@@ -1952,6 +1962,13 @@
     <h2>The store behind the <em>budget lot</em>.</h2>
     <p class="band-deck">The same store local owners knew as Frank Subaru, now operating as Dalton Subaru National City under the Dalton Corporation: same people, same service drive, same phone line. We serve National City, Chula Vista, and the wider San Diego County area.</p>
 
+
+    <div class="trust-grid">
+      <div class="item"><div class="num">4.7<small> &#9733;</small></div><div class="lbl">Google rating &middot; 4,448 reviews</div></div>
+      <div class="item"><div class="num">2012<small>&ndash;16</small></div><div class="lbl">Typical model years under $10,000</div></div>
+      <div class="item"><div class="num">110k<small>+</small></div><div class="lbl">Typical mileage at this price tier</div></div>
+      <div class="item"><div class="num">AWD</div><div class="lbl">Symmetrical All-Wheel Drive on every trim</div></div>
+    </div>
 
     <div class="why-extras">
       <div>
@@ -2085,6 +2102,42 @@
 </main>
 
 <!-- Sources -->
+<!-- More from Dalton Subaru National City (related guides) -->
+<section class="sources" id="related-reading">
+  <div class="wrap">
+    <div class="article-grid" style="padding-top:0;">
+      <div></div>
+      <div class="body">
+        <div class="section-num"><span>&middot;</span><span>Related reading</span></div>
+        <h3>More from Dalton Subaru National City</h3>
+        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;">Shopping a tight budget? These guides help you weigh what to buy, when to stretch, and what ownership costs after the sale.</p>
+        <h4 style="margin-top:28px; font-size:13px; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">Next steps</h4>
+        <ul class="ext" style="margin-bottom:28px;">
+          <li><a href="https://www.subarudalton.com/searchused.aspx">Browse the used lot by price</a></li>
+          <li><a href="https://www.subarudalton.com/searchused-national-city-ca.aspx">See used inventory in National City</a></li>
+          <li><a href="https://www.subarudalton.com/searchnew.aspx">Compare against a new Subaru</a></li>
+          <li><a href="https://www.subarudalton.com/contactus.aspx">Reach the used-car desk</a></li>
+        </ul>
+        <h4 style="margin-top:8px; font-size:13px; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">Related reading</h4>
+        <ul class="ext" style="margin-bottom:28px;">
+          <li><a href="https://www.subarudalton.com/used-subaru-for-sale-national-city">Used Subaru for Sale in National City</a></li>
+          <li><a href="https://www.subarudalton.com/subaru-crosstrek-for-sale">2026 Subaru Crosstrek for Sale</a></li>
+          <li><a href="https://www.subarudalton.com/subaru-limited-vs-premium">Subaru Limited vs Premium</a></li>
+        </ul>
+        <h4 style="margin-top:8px; font-size:13px; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted);">Sources and references</h4>
+        <ul class="ext">
+          <li><a href="https://www.subarudalton.com/used-subaru-for-sale-national-city">Used Subaru for sale in National City</a>. The wider pre-owned picture across every price tier.</li>
+          <li><a href="https://www.subarudalton.com/subaru-crosstrek-for-sale">2026 Subaru Crosstrek for sale</a>. If the budget stretches to new, this is the entry point.</li>
+          <li><a href="https://www.subarudalton.com/subaru-limited-vs-premium">Subaru Limited vs Premium</a>. Which trim National City buyers pick, and what the step up buys.</li>
+          <li><a href="https://www.subarudalton.com/is-subaru-the-best-car-brand">Is Subaru the best car brand in 2026?</a> What San Diego buyers weigh before committing to the badge.</li>
+          <li><a href="https://www.subarudalton.com/subaru-for-sale-national-city">Subaru for sale in National City</a>. Pick the right model across the full lineup, no pressure.</li>
+        </ul>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</section>
+
 <section class="sources" id="sources">
   <div class="wrap">
     <div class="article-grid" style="padding-top:0;">
