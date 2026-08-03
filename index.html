@@ -733,8 +733,10 @@
     border-bottom: 1px solid var(--rule);
   }
   .trim:nth-child(2n) { border-right: none; }
-  .trim:nth-last-child(-n+2) { border-bottom: none; }
+  /* Last row only. With an odd card count the final card spans its own row,
+     so the card above-right must keep its rule or the line goes half-width. */
   .trim:last-child { border-bottom: none; }
+  .trim:nth-last-child(2):nth-child(odd) { border-bottom: none; }
   .trim .engine-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; white-space: nowrap; }
   .trim .engine { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); font-weight: 700; }
   .trim.wilderness .engine { color: var(--blue-deep); }
