@@ -1217,6 +1217,8 @@
     margin-top: 56px;
     border-top: 1px solid var(--rule);
   }
+  /* Adjacent sources blocks: collapse the 56px white strip between them */
+  .sources + .sources { margin-top: 0; }
   .sources h3 { font-family: var(--display); font-size: 28px; font-weight: 500; margin: 0 0 8px; }
   .sources .meta-line { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 28px; }
   .sources .ext {
