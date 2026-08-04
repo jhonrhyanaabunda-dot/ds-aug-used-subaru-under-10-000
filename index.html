@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no" />
-<title>Used Subaru Under $10,000 | Pre-Owned Subarus on a Budget at Dalton Subaru National City</title>
-<meta name="description" content="Shopping for a used Subaru under $10,000 in San Diego County? Dalton Subaru National City lists budget pre-owned Subarus, older Outbacks, Foresters, and Imprezas, on the Mile of Cars. See live listings at subarudalton.com." />
+<title>Used Subaru Under $10,000 | Dalton Subaru National City</title>
+<meta name="description" content="Budget pre-owned Subarus under $10,000 at Dalton Subaru National City: older Outbacks, Foresters, and Imprezas on the Mile of Cars." />
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
 <link rel="canonical" href="https://www.subarudalton.com/used-subaru-under-10000-national-city/" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Used Subaru Under $10,000 in National City | Dalton Subaru National City" />
-<meta property="og:description" content="Budget-friendly pre-owned Subarus under $10,000 at Dalton Subaru National City, older Outbacks, Foresters, and Imprezas, with honest used-car advice for San Diego County drivers." />
+<meta property="og:title" content="Used Subaru Under $10,000 | Dalton Subaru National City" />
+<meta property="og:description" content="Budget pre-owned Subarus under $10,000 at Dalton Subaru National City: older Outbacks, Foresters, and Imprezas on the Mile of Cars." />
 <meta property="og:url" content="https://www.subarudalton.com/used-subaru-under-10000-national-city/" />
 <meta property="og:site_name" content="Dalton Subaru National City" />
-<meta property="og:image" content="crosstrek-wilderness-lot.webp" />
+<meta property="og:image" content="https://www.subarudalton.com/used-subaru-under-10000-national-city/crosstrek-wilderness-lot.webp" />
 <meta property="og:image:width" content="2000" />
 <meta property="og:image:height" content="1125" />
 <meta property="og:locale" content="en_US" />
@@ -25,9 +25,9 @@
 
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Used Subaru Under $10,000 in National City | Dalton Subaru National City" />
-<meta name="twitter:description" content="Budget-friendly pre-owned Subarus under $10,000 at Dalton Subaru National City, older Outbacks, Foresters, and Imprezas, with honest used-car advice for San Diego County drivers." />
-<meta name="twitter:image" content="crosstrek-wilderness-lot.webp" />
+<meta name="twitter:title" content="Used Subaru Under $10,000 | Dalton Subaru National City" />
+<meta name="twitter:description" content="Budget pre-owned Subarus under $10,000 at Dalton Subaru National City: older Outbacks, Foresters, and Imprezas on the Mile of Cars." />
+<meta name="twitter:image" content="https://www.subarudalton.com/used-subaru-under-10000-national-city/crosstrek-wilderness-lot.webp" />
 
 <!-- Favicon -->
 <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -58,9 +58,9 @@
       "@id": "https://www.subarudalton.com/used-subaru-under-10000-national-city/#article",
       "headline": "Used Subaru Under $10,000 in National City",
       "description": "Shopping for a used Subaru under $10,000 in San Diego County? Dalton Subaru National City lists budget pre-owned Subarus, older Outbacks, Foresters, and Imprezas, on the Mile of Cars, with honest used-car advice.",
-      "image": "crosstrek-wilderness-lot.webp",
+      "image": "https://www.subarudalton.com/used-subaru-under-10000-national-city/crosstrek-wilderness-lot.webp",
       "datePublished": "2026-08-01T00:00:00-07:00",
-      "dateModified": "2026-08-01T00:00:00-07:00",
+      "dateModified": "2026-08-04T00:00:00-07:00",
       "author": {
         "@type": "Person",
         "name": "Juan Reynoso",
@@ -478,7 +478,8 @@
     aspect-ratio: 2 / 1;
     max-width: 100vw;
   }
-  @media (max-width: 760px) {
+  @media (min-width: 761px) { .section-image .frame img.zoom-car { transform: scale(1.28); transform-origin: 58% 56%; } }
+    @media (max-width: 760px) {
     .hero-photo.full-bleed {
       width: 100%;
       max-width: 100%;
@@ -727,7 +728,7 @@
   }
   .trim {
     padding: 32px 26px 30px;
-    display: flex; flex-direction: column; gap: 10px;
+    display: grid; grid-template-rows: subgrid; grid-row: span 3; row-gap: 10px;
     position: relative;
     border-right: 1px solid var(--rule);
     border-bottom: 1px solid var(--rule);
@@ -737,12 +738,12 @@
      so the card above-right must keep its rule or the line goes half-width. */
   .trim:last-child { border-bottom: none; }
   .trim:nth-last-child(2):nth-child(odd) { border-bottom: none; }
-  .trim .engine-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; white-space: nowrap; }
+  .trim .engine-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 0; white-space: nowrap; }
   .trim .engine { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--blue); font-weight: 700; }
   .trim.wilderness .engine { color: var(--blue-deep); }
   .trim .badge { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
   .trim.flagship .badge { color: var(--blue); }
-  .trim .name { font-family: var(--display); font-size: 26px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); line-height: 1.05; margin: 6px 0 12px; min-height: calc(26px * 1.05 * 2); }
+  .trim .name { font-family: var(--display); font-size: 26px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); line-height: 1.05; margin: 0; }
   .trim .equip { font-size: 14px; color: var(--ink-soft); line-height: 1.65; margin: 0; }
 
   /* ---------- Specs strip ---------- */
@@ -1228,8 +1229,8 @@
     list-style: none; padding: 0; margin: 0;
     font-size: 14px;
   }
-  .sources .ext li { padding: 10px 0; border-top: 1px solid var(--rule); display: flex; gap: 10px; align-items: baseline; }
-  .sources .ext li::before { content: "↗"; color: var(--blue); font-size: 12px; }
+  .sources .ext li { position: relative; padding: 10px 0 10px 22px; border-top: 1px solid var(--rule); }
+  .sources .ext li::before { content: "\2197"; position: absolute; left: 0; top: 10px; color: var(--blue); font-size: 12px; line-height: 1.7; }
 
   /* ---------- Closing CTA ---------- */
   .closing-cta {
@@ -1577,7 +1578,7 @@
 
 
         <h3>What you won't find is a guessing game</h3>
-        <p>Vehicles in the under-$10,000 tier move quickly and turn over often, so the smartest first step is to view live inventory online rather than assume a specific model and year are sitting on the lot today. If something in your budget is here, you'll see it, with photos, the history report, and the real price, at <a href="https://www.subarudalton.com/searchused.aspx" rel="noopener">subarudalton.com</a>.</p>
+        <p>Vehicles in the under-$10,000 tier move quickly and turn over often. The smartest first step is to view live inventory online rather than assume a specific model and year are sitting on the lot today. If something in your budget is here, you'll see it, with photos, the history report, and the real price, at <a href="https://www.subarudalton.com/searchused.aspx" rel="noopener">subarudalton.com</a>.</p>
 
         <blockquote class="pull">
           The Subarus we tag under $10,000 are almost always 2012–2016 model years with 110,000 miles or more. That isn't a knock, it's the math of the used market.
@@ -1612,7 +1613,7 @@
           <article class="trim">
             <div class="engine-row"><span class="engine">Road test</span><span class="badge">Driven</span></div>
             <h4 class="name">A real drive before listing</h4>
-            <p class="equip"><strong>Not just scanned.</strong> On a recent 130,000-mile Forester trade, we ran a loop down National City Blvd and onto the freeway on-ramp, checked how the AWD engaged and whether the CVT shuddered under load, then approved it. If a car doesn't pass that drive, it doesn't go up for sale.</p>
+            <p class="equip"><strong>Not just scanned.</strong> On a recent 130,000-mile Forester trade, we ran a loop down National City Blvd and onto the freeway on-ramp. We checked how the AWD engaged and whether the CVT shuddered under load, then approved it. If a car doesn't pass that drive, it doesn't go up for sale.</p>
           </article>
           <article class="trim wilderness">
             <div class="engine-row"><span class="engine">Declined</span><span class="badge">When it fails</span></div>
@@ -1726,7 +1727,13 @@
         <p class="lede no-cap">It helps to know the difference between the two tiers you'll see at Dalton Subaru National City, because price and peace of mind sit on a sliding scale.</p>
 
         <h3>Budget pre-owned</h3>
-        <p>Most vehicles near the under-$10,000 mark fall into our broader pre-owned selection. These give you the widest range of price points and model years, including non-Subaru trade-ins. If your priority is getting the most reliable vehicle your budget allows, this is where to start. These cars are sold either as-is or with whatever coverage remains, and our team will tell you in plain language exactly which one you're looking at.</p>
+        <p>Most vehicles near the under-$10,000 mark fall into our broader pre-owned selection.</p>
+
+        <ul class="bullets">
+          <li><strong>The widest choice:</strong> the broadest range of price points and model years, including non-Subaru trade-ins.</li>
+          <li><strong>Where to start:</strong> if your priority is the most reliable vehicle your budget allows, look here first.</li>
+          <li><strong>Coverage varies:</strong> these sell either as-is or with whatever coverage remains. Our team will tell you in plain language which one you're looking at.</li>
+        </ul>
 
         <h3>Subaru Certified Pre-Owned (CPO)</h3>
         <p>Subaru Certified Pre-Owned vehicles typically sit above the budget tier, but they're worth understanding because the gap in coverage is significant. A CPO Subaru has passed Subaru's 152-point inspection and includes:</p>
@@ -1736,7 +1743,11 @@
           <li>24/7 roadside assistance</li>
           <li>A 152-point mechanical and appearance inspection</li>
         </ul>
-        <p>Subaru publishes the full CPO program terms on its corporate site (<a href="https://www.subaru.com" rel="noopener">subaru.com</a>), and it's worth reading before you set your sights on CPO or standard used. If your budget has a little room to grow, CPO does cost more upfront, but provides far more coverage. On a vehicle you plan to keep five years, that warranty can outweigh the price difference. If your budget doesn't have room, our budget pre-owned vehicles are the right way to go, and our team can help you find the strongest option in your range.</p>
+        <p>Subaru publishes the full CPO program terms on its corporate site (<a href="https://www.subaru.com" rel="noopener">subaru.com</a>), and it's worth reading before you set your sights on CPO or standard used.</p>
+
+          <p>If your budget has a little room to grow, CPO costs more upfront but provides far more coverage. On a vehicle you plan to keep five years, that warranty can outweigh the price difference.</p>
+
+          <p>If your budget doesn't have room, our budget pre-owned vehicles are the right way to go, and our team can help you find the strongest option in your range.</p>
 
         <!-- Desktop: budget vs CPO comparison table -->
         <div class="cross-table">
@@ -1878,9 +1889,9 @@
       
         <figure class="section-image" style="margin:32px 0 28px;position:relative;">
           <div class="frame" style="aspect-ratio:auto;border:none;background:transparent;max-height:60vh;overflow:hidden;border-radius:12px;">
-            <img src="body-forester-street.jpg" alt="A recent-model-year Subaru Forester driving through a city street corner, shown to illustrate the Forester body style sold at Dalton Subaru National City" loading="lazy" decoding="async" style="width:100%;height:56vh;display:block;object-fit:cover;object-position:center 55%;">
+            <img src="body-forester-street.jpg" alt="A recent-model-year Subaru Forester driving through a city street corner, shown to illustrate the Forester body style sold at Dalton Subaru National City" loading="lazy" decoding="async" class="zoom-car" style="width:100%;height:56vh;display:block;object-fit:cover;object-position:center 55%;">
           </div>
-          <figcaption style="margin-top:10px;font-size:13px;line-height:1.5;color:var(--muted);text-align:left;max-width:70ch;">The Forester is the one we most often point budget families toward, for its tall roof and big glass in a footprint that still fits a National City driveway. Pictured is a recent model year; under-$10,000 examples are typically 2009&ndash;2013 with higher mileage.</figcaption>
+          <figcaption style="margin-top:22px;font-size:13px;line-height:1.5;color:var(--muted);text-align:left;max-width:70ch;">The Forester is the one we most often point budget families toward, for its tall roof and big glass in a footprint that still fits a National City driveway. Pictured is a recent model year; under-$10,000 examples are typically 2009&ndash;2013 with higher mileage.</figcaption>
         </figure>
       
       </section>
@@ -1892,10 +1903,14 @@
         <p class="lede no-cap">There's a reason these cars hold up. Standard all-wheel drive plus a low center of gravity from the boxer engine give even older Subarus stable, predictable handling. The local climate is unusually kind to a used car, too.</p>
 
         <h3>The safety record holds up</h3>
-        <p>The Insurance Institute for Highway Safety (<a href="https://www.iihs.org" rel="noopener">iihs.org</a>) has awarded multiple Subaru models Top Safety Pick honors over the years. You can also look up any used Subaru's open-recall status for free by VIN at the National Highway Traffic Safety Administration's site (<a href="https://www.nhtsa.gov" rel="noopener">nhtsa.gov</a>),we do exactly that on every car before it lists, and we'd encourage you to verify it yourself.</p>
+        <p>The Insurance Institute for Highway Safety (<a href="https://www.iihs.org" rel="noopener">iihs.org</a>) has awarded multiple Subaru models Top Safety Pick honors over the years.</p>
+
+        <p>You can also look up any used Subaru's open-recall status for free by VIN at the National Highway Traffic Safety Administration's site (<a href="https://www.nhtsa.gov" rel="noopener">nhtsa.gov</a>). We do exactly that on every car before it lists, and we'd encourage you to verify it yourself.</p>
 
         <h3>The climate is on your side</h3>
-        <p>For Southern California specifically, the calculus is friendly to an older Subaru. We don't have the road salt and corrosion that eats undercarriages in the Snow Belt, so a clean, well-maintained 2013 Outback here often has years of life that the same car wouldn't have in Buffalo. That's part of why a budget AWD Subaru is a sensible buy in National City, Chula Vista, and across San Diego County, the climate is on your side.</p>
+        <p>For Southern California specifically, the calculus is friendly to an older Subaru. We don't have the road salt and corrosion that eats undercarriages in the Snow Belt.</p>
+
+        <p>That's part of why a budget AWD Subaru is a sensible buy in National City, Chula Vista, and across San Diego County.</p>
 
         <blockquote class="pull">
           A clean, well-maintained 2013 Outback here often has years of life the same car wouldn't have in Buffalo. No road salt, no corrosion eating the undercarriage.
@@ -1930,7 +1945,7 @@
           <li><strong>Ask for the history report</strong> on any car before you make the drive in</li>
         </ul>
 
-        <p>When you're ready to move on a budget Subaru, the path is short: filter inventory online, ask for the history report, line up a visit, and let us walk you through the car's condition in the showroom.</p>
+        <p>When you're ready to move on a budget Subaru, the path is short. Filter inventory online, ask for the history report, and line up a visit. We'll walk you through the car's condition in the showroom.</p>
       </section>
     </div>
 
@@ -2156,9 +2171,15 @@
           <div style="font-size:12px; color:var(--muted); margin-top:10px; letter-spacing:0.04em;">Dalton Subaru National City · 2829 National City Blvd, National City, CA 91950</div>
         </div>
 
-        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;">Subaru Certified Pre-Owned program terms (152-point inspection, 7-year/100,000-mile powertrain warranty, 24/7 roadside assistance) described from Subaru's published information at subaru.com. Total-cost-of-ownership guidance reflects the U.S. Department of Energy's fuel-economy resource at fueleconomy.gov. Open recalls by VIN should be verified at nhtsa.gov, and safety honors at iihs.org. Model years, mileage, condition, and pricing in the under-$10,000 tier change daily as trade-ins move and should be re-verified before any deal is signed. For a specific car's history and price, reach the used-car team through the <a href="https://www.subarudalton.com/contactus.aspx"><strong>Contact Us</strong></a> page.</p>
+        <ul class="bullets" style="font-size:15px; color:var(--ink-soft); max-width:660px;">
+            <li>Subaru Certified Pre-Owned program terms are described from Subaru's published information at subaru.com. That covers the 152-point inspection, the 7-year/100,000-mile powertrain warranty, and 24/7 roadside assistance.</li>
+            <li>Total-cost-of-ownership guidance reflects the U.S. Department of Energy's fuel-economy resource at fueleconomy.gov.</li>
+            <li>Open recalls by VIN should be verified at nhtsa.gov, and safety honors at iihs.org.</li>
+            <li>Model years, mileage, condition, and pricing in the under-$10,000 tier change daily as trade-ins move. Re-verify before any deal is signed.</li>
+            <li>For a specific car's history and price, reach the used-car team through the <a href="https://www.subarudalton.com/contactus.aspx"><strong>Contact Us</strong></a> page.</li>
+          </ul>
 
-        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;"><em>If a question about a used Subaru under $10,000 at Dalton Subaru National City is not answered here, reach the used-car team through the <a href="https://www.subarudalton.com/contactus.aspx">Contact Us</a> page, or browse current pre-owned inventory at <a href="https://www.subarudalton.com/searchused.aspx" rel="noopener">subarudalton.com</a>.</em></p>
+        <p style="font-size:15px; color:var(--ink-soft); max-width:660px;"><em>If a question about a used Subaru under $10,000 at Dalton Subaru National City is not answered here, reach the used-car team through the <a href="https://www.subarudalton.com/contactus.aspx">Contact Us</a> page. You can also browse current pre-owned inventory at <a href="https://www.subarudalton.com/searchused.aspx" rel="noopener">subarudalton.com</a>.</em></p>
 
         <ul class="ext">
           <li><a href="https://www.subaru.com" rel="noopener" target="_blank">Subaru USA · Certified Pre-Owned program terms, 152-point inspection, and warranty coverage</a></li>
@@ -2178,7 +2199,7 @@
 <section class="closing-cta">
   <div class="wrap">
     <h2>Ready to find a used Subaru <em>in your budget</em>?</h2>
-    <p>Filter the current pre-owned lineup by price at subarudalton.com, reach us through the Contact Us page, or stop by Dalton Subaru National City at 2829 National City Blvd on the National City Mile of Cars. We hold a 4.7-star Google rating across 4,452 reviews.</p>
+    <p>Filter the current pre-owned lineup by price at subarudalton.com, reach us through the Contact Us page. Or stop by Dalton Subaru National City at 2829 National City Blvd on the National City Mile of Cars. We hold a 4.7-star Google rating across 4,452 reviews.</p>
     <div class="actions">
       <a class="btn primary" href="https://www.subarudalton.com/searchused.aspx">Browse used inventory <span class="arrow">→</span></a>
       <a class="btn ghost" href="https://www.subarudalton.com/contactus.aspx">Contact Us</a>
