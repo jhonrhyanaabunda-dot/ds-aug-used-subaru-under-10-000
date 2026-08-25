@@ -14,9 +14,9 @@
 <meta property="og:description" content="Budget pre-owned Subarus under $10,000 at Dalton Subaru National City: older Outbacks, Foresters, and Imprezas on the Mile of Cars." />
 <meta property="og:url" content="https://www.subarudalton.com/used-subaru-under-10000-national-city/" />
 <meta property="og:site_name" content="Dalton Subaru National City" />
-<meta property="og:image" content="https://www.subarudalton.com/used-subaru-under-10000-national-city/crosstrek-wilderness-lot.webp" />
-<meta property="og:image:width" content="2000" />
-<meta property="og:image:height" content="1125" />
+<meta property="og:image" content="https://www.subarudalton.com/used-subaru-under-10000-national-city/header-impreza.webp" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="675" />
 <meta property="og:locale" content="en_US" />
 <meta property="article:published_time" content="2026-08-01T00:00:00-07:00" />
 <meta property="article:modified_time" content="2026-08-01T00:00:00-07:00" />
@@ -27,14 +27,14 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Used Subaru Under $10,000 | Dalton Subaru National City" />
 <meta name="twitter:description" content="Budget pre-owned Subarus under $10,000 at Dalton Subaru National City: older Outbacks, Foresters, and Imprezas on the Mile of Cars." />
-<meta name="twitter:image" content="https://www.subarudalton.com/used-subaru-under-10000-national-city/crosstrek-wilderness-lot.webp" />
+<meta name="twitter:image" content="https://www.subarudalton.com/used-subaru-under-10000-national-city/header-impreza.webp" />
 
 <!-- Favicon -->
 <link rel="icon" href="/favicon.ico" sizes="any" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
 <!-- Preload hero image for faster LCP -->
-<link rel="preload" as="image" href="crosstrek-wilderness-lot.webp" fetchpriority="high" />
+<link rel="preload" as="image" href="header-impreza.webp" fetchpriority="high" />
 
 <!-- JSON-LD: Article + AutoDealer + Vehicle Products + FAQPage + BreadcrumbList -->
 <script type="application/ld+json">
@@ -58,7 +58,7 @@
       "@id": "https://www.subarudalton.com/used-subaru-under-10000-national-city/#article",
       "headline": "Used Subaru Under $10,000 in National City",
       "description": "Shopping for a used Subaru under $10,000 in San Diego County? Dalton Subaru National City lists budget pre-owned Subarus, older Outbacks, Foresters, and Imprezas, on the Mile of Cars, with honest used-car advice.",
-      "image": "https://www.subarudalton.com/used-subaru-under-10000-national-city/crosstrek-wilderness-lot.webp",
+      "image": "https://www.subarudalton.com/used-subaru-under-10000-national-city/header-impreza.webp",
       "datePublished": "2026-08-01T00:00:00-07:00",
       "dateModified": "2026-08-04T00:00:00-07:00",
       "author": {
@@ -459,7 +459,7 @@
   /* Hero image */
   .hero-photo {
     position: relative;
-    aspect-ratio: 2;
+    aspect-ratio: 16 / 9;
     border-radius: var(--radius-md);
     overflow: hidden;
     background: var(--blue-soft);
@@ -475,7 +475,7 @@
     margin-top: 24px;
     border: none;
     border-radius: 0;
-    aspect-ratio: 2;
+    aspect-ratio: 16 / 9;
     max-width: 100vw;
   }
   @media (min-width: 761px) { .section-image .frame img.zoom-car { transform: scale(1.28); transform-origin: 58% 56%; } }
@@ -486,7 +486,7 @@
       margin-left: 0;
       margin-right: 0;
       margin-top: 32px;
-      aspect-ratio: 2;
+      aspect-ratio: 16 / 9;
     }
   }
   .hero-photo::before {
@@ -1499,6 +1499,35 @@
   .cc-next { right: 12px; }
   a.rev-link { color: inherit; text-decoration: none; }
   a.rev-link:hover { text-decoration: underline; }
+  /* ---- Impreza gallery carousel ---- */
+  .dsg { margin: 34px 0 30px; }
+  .dsg-stage { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden;
+    border-radius: var(--radius-md); background: var(--paper-2); border: 1px solid var(--rule); }
+  .dsg-slide { position: absolute; inset: 0; opacity: 0; transition: opacity .35s ease; }
+  .dsg-slide[data-active] { opacity: 1; }
+  .dsg-slide img { width: 100%; height: 100%; display: block; object-fit: cover; }
+  .dsg-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 42px; height: 42px;
+    border-radius: var(--radius-pill); border: 1px solid var(--rule); background: rgba(255,255,255,.94);
+    color: var(--blue-ink); font-size: 19px; line-height: 1; cursor: pointer; display: grid; place-items: center;
+    transition: background .18s ease, border-color .18s ease; }
+  .dsg-nav:hover { background: #fff; border-color: var(--blue); }
+  .dsg-nav:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+  .dsg-prev { left: 12px; } .dsg-next { right: 12px; }
+  .dsg-count { position: absolute; right: 12px; bottom: 12px; padding: 4px 10px; border-radius: var(--radius-pill);
+    background: rgba(11,58,111,.86); color: #fff; font-size: 12px; letter-spacing: .02em; }
+  .dsg-thumbs { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; margin-top: 10px; }
+  .dsg-thumb { padding: 0; border: 2px solid transparent; border-radius: var(--radius-sm); overflow: hidden;
+    background: none; cursor: pointer; aspect-ratio: 16 / 9; }
+  .dsg-thumb img { width: 100%; height: 100%; display: block; object-fit: cover; opacity: .62; transition: opacity .18s ease; }
+  .dsg-thumb[aria-current="true"] { border-color: var(--blue); }
+  .dsg-thumb[aria-current="true"] img, .dsg-thumb:hover img { opacity: 1; }
+  .dsg-thumb:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+  .dsg figcaption { margin-top: 14px; font-size: 13px; line-height: 1.55; color: var(--muted); max-width: 70ch; }
+  @media (max-width: 760px) {
+    .dsg-thumbs { grid-template-columns: repeat(4, 1fr); }
+    .dsg-nav { width: 38px; height: 38px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .dsg-slide { transition: none; } }
 </style>
 </head>
 <body>
@@ -1526,12 +1555,11 @@
 
   <figure class="hero-photo full-bleed" role="img" aria-label="Pre-owned Subaru at Dalton Subaru National City">
     <img class="scene"
-         src="banner-subaru-white.jpg"
-         alt="A white Subaru parked on a forest trail, shown for illustration; under-$10,000 stock at Dalton Subaru National City is older model years"
+         src="header-impreza.webp"
+         alt="A red Subaru Impreza on a mountain road, shown for illustration; under-$10,000 stock at Dalton Subaru National City is older model years"
          loading="eager"
          fetchpriority="high"
-         width="1200" height="675"
-         style="object-position: center 48%;" />    <figcaption class="visually-hidden">Photographed at Dalton Subaru National City on the National City Mile of Cars. The car shown is a current-generation Crosstrek, used here to illustrate the lineup; vehicles in the under-$10,000 tier are older model years with higher mileage.</figcaption>
+         width="1200" height="675" />    <figcaption class="visually-hidden">The car shown is a current-generation Impreza, used here to illustrate the lineup; vehicles in the under-$10,000 tier are older model years with higher mileage.</figcaption>
   </figure>
 </header>
 
@@ -1628,6 +1656,13 @@
           It would have priced beautifully under $10,000. The head-gasket history didn't add up against the service records, so we declined it. We passed.
         </blockquote>
 
+
+        <figure class="section-image" style="margin:32px 0 28px;">
+          <div class="frame" style="aspect-ratio:4 / 3;border:1px solid var(--rule);background:var(--paper-2);overflow:hidden;border-radius:12px;">
+            <img src="used-lot-forester.webp" alt="A red Subaru Forester on the used-car lot at Dalton Subaru National City, with the inspection paperwork still in the windshield" loading="lazy" decoding="async" style="width:100%;height:100%;display:block;object-fit:cover;object-position:center 58%;">
+          </div>
+          <figcaption style="margin-top:14px;font-size:13px;line-height:1.55;color:var(--muted);max-width:70ch;">A trade-in on our used lot with the inspection sheet still in the windshield. Every budget Subaru goes through this before it gets a price, and anything that fails goes to auction instead.</figcaption>
+        </figure>
         <p>Our used-car team can walk you through each vehicle's condition and history so there are no surprises after you sign. Reach us through the <a href="https://www.subarudalton.com/contactus.aspx">Contact Us</a> page, or browse <a href="https://www.subarudalton.com/searchused.aspx">live pre-owned inventory</a> to see what's on the ground today.</p>
       
       </section>
@@ -1887,6 +1922,61 @@
           </article>
         </div>
 
+
+        <figure class="dsg" id="impreza-gallery" data-dsg aria-roledescription="carousel" aria-label="Subaru Impreza photo gallery">
+          <div class="dsg-stage">
+        <div class="dsg-slide" data-active role="group" aria-roledescription="slide" aria-label="Image 1 of 7">
+          <img src="carousel/red%201.webp" alt="Red Subaru Impreza hatchback driving on a tree-lined road" loading="lazy" decoding="async" width="1100" height="581" />
+        </div>
+        <div class="dsg-slide" role="group" aria-roledescription="slide" aria-label="Image 2 of 7">
+          <img src="carousel/red%202.webp" alt="Impreza dashboard and centre touchscreen" loading="lazy" decoding="async" width="1100" height="581" />
+        </div>
+        <div class="dsg-slide" role="group" aria-roledescription="slide" aria-label="Image 3 of 7">
+          <img src="carousel/red%203.webp" alt="Impreza steering wheel with audio and cruise controls" loading="lazy" decoding="async" width="1100" height="581" />
+        </div>
+        <div class="dsg-slide" role="group" aria-roledescription="slide" aria-label="Image 4 of 7">
+          <img src="carousel/red%204.webp" alt="Impreza interior seen from the passenger side" loading="lazy" decoding="async" width="1100" height="581" />
+        </div>
+        <div class="dsg-slide" role="group" aria-roledescription="slide" aria-label="Image 5 of 7">
+          <img src="carousel/red%205.webp" alt="Close-up of Impreza front seat fabric and bolsters" loading="lazy" decoding="async" width="1100" height="581" />
+        </div>
+        <div class="dsg-slide" role="group" aria-roledescription="slide" aria-label="Image 6 of 7">
+          <img src="carousel/red%206.webp" alt="Impreza overhead console with SOS and info buttons" loading="lazy" decoding="async" width="1100" height="581" />
+        </div>
+        <div class="dsg-slide" role="group" aria-roledescription="slide" aria-label="Image 7 of 7">
+          <img src="carousel/red%207.webp" alt="Rear three-quarter view of a red Impreza on a highway" loading="lazy" decoding="async" width="1100" height="581" />
+        </div>
+            <button type="button" class="dsg-nav dsg-prev" data-step="-1" aria-label="Previous image">&#8249;</button>
+            <button type="button" class="dsg-nav dsg-next" data-step="1" aria-label="Next image">&#8250;</button>
+            <span class="dsg-count" data-dsg-count aria-hidden="true">1 / 7</span>
+          </div>
+          <div class="dsg-thumbs">
+        <button type="button" class="dsg-thumb" data-go="0" aria-current="true" aria-label="Show image 1 of 7">
+          <img src="carousel/red%201.webp" alt="" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" class="dsg-thumb" data-go="1" aria-current="false" aria-label="Show image 2 of 7">
+          <img src="carousel/red%202.webp" alt="" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" class="dsg-thumb" data-go="2" aria-current="false" aria-label="Show image 3 of 7">
+          <img src="carousel/red%203.webp" alt="" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" class="dsg-thumb" data-go="3" aria-current="false" aria-label="Show image 4 of 7">
+          <img src="carousel/red%204.webp" alt="" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" class="dsg-thumb" data-go="4" aria-current="false" aria-label="Show image 5 of 7">
+          <img src="carousel/red%205.webp" alt="" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" class="dsg-thumb" data-go="5" aria-current="false" aria-label="Show image 6 of 7">
+          <img src="carousel/red%206.webp" alt="" loading="lazy" decoding="async" />
+        </button>
+        <button type="button" class="dsg-thumb" data-go="6" aria-current="false" aria-label="Show image 7 of 7">
+          <img src="carousel/red%207.webp" alt="" loading="lazy" decoding="async" />
+        </button>
+          </div>
+          <figcaption data-dsg-cap aria-live="polite">Impreza hatchback on the move. The five-door body is the one budget shoppers usually end up in, because it swallows more than the sedan for the same money.</figcaption>
+          <p style="margin-top:10px;font-size:12px;line-height:1.5;color:var(--muted);">Current-generation Impreza shown throughout. Under-$10,000 examples on our lot are earlier model years with higher mileage and simpler equipment.</p>
+        </figure>
+
         <p>Availability and pricing change daily. For current options in your budget, view the <a href="https://www.subarudalton.com/searchused.aspx">live inventory online</a> or stop by the store on the Mile of Cars.</p>
       
         <figure class="section-image" style="margin:32px 0 28px;position:relative;">
@@ -1939,6 +2029,13 @@
           <li><strong>Talk to the team.</strong> Bring up financing or a trade-in early, it changes what fits your budget. Reach us through the <a href="https://www.subarudalton.com/contactus.aspx">Contact Us</a> page.</li>
         </ol>
 
+
+        <figure class="section-image" style="margin:32px 0 28px;">
+          <div class="frame" style="aspect-ratio:4 / 3;border:1px solid var(--rule);background:var(--paper-2);overflow:hidden;border-radius:12px;">
+            <img src="used-crosstrek-02.jpg" alt="A white Subaru Crosstrek photographed in profile on the lot at Dalton Subaru on the National City Mile of Cars" loading="lazy" decoding="async" style="width:100%;height:100%;display:block;object-fit:cover;object-position:center 55%;">
+          </div>
+          <figcaption style="margin-top:14px;font-size:13px;line-height:1.55;color:var(--muted);max-width:70ch;">Photographed on our lot on the National City Mile of Cars. Call ahead before you drive in, because budget stock is the fastest-moving inventory we carry and a car listed this morning may be gone by the afternoon.</figcaption>
+        </figure>
         <h3>How to get started</h3>
         <ul class="bullets">
           <li><strong>Browse pre-owned inventory</strong> and filter by price at <a href="https://www.subarudalton.com/searchused.aspx" rel="noopener">subarudalton.com</a></li>
@@ -2188,9 +2285,7 @@
           <li><a href="https://www.fueleconomy.gov" rel="noopener" target="_blank">U.S. Department of Energy · fueleconomy.gov, total cost of ownership: fuel, maintenance, and repairs</a></li>
           <li><a href="https://www.nhtsa.gov" rel="noopener" target="_blank">NHTSA · free open-recall lookup by VIN for any used Subaru</a></li>
           <li><a href="https://www.iihs.org" rel="noopener" target="_blank">IIHS · Top Safety Pick honors and crashworthiness testing for Subaru models</a></li>
-          <li><a href="https://www.kbb.com/subaru/" rel="noopener" target="_blank">Kelley Blue Book · independent used-Subaru valuation and pricing context</a></li>
-          <li><a href="https://www.edmunds.com/subaru/" rel="noopener" target="_blank">Edmunds · independent used-Subaru valuation and reviews</a></li>
-        </ul>
+                          </ul>
       </div>
       <div></div>
     </div>
@@ -2215,7 +2310,7 @@
     <h4>Disclosures</h4>
     <ul>
       <li><strong>Inventory &amp; availability.</strong> Budget pre-owned vehicles under $10,000 are the fastest-moving part of our lot and turn over daily. This page is not a guarantee that any specific model, year, or price is currently in stock. Confirm live availability at <a href="https://www.subarudalton.com/searchused.aspx" rel="noopener">subarudalton.com used inventory</a> before visiting.</li>
-      <li><strong>Pricing &amp; examples.</strong> We do not publish payment, APR, or financing figures on this page because those terms change. Any dollar figures used to illustrate total cost of ownership are examples, not quotes, listings, or offers on any specific vehicle. A given car's price is its window sticker plus the offer running that day. All financing is subject to credit approval. For independent value research, see <a href="https://www.kbb.com" rel="noopener">kbb.com</a> and <a href="https://www.edmunds.com" rel="noopener">edmunds.com</a>.</li>
+      <li><strong>Pricing &amp; examples.</strong> We do not publish payment, APR, or financing figures on this page because those terms change. Any dollar figures used to illustrate total cost of ownership are examples, not quotes, listings, or offers on any specific vehicle. A given car's price is its window sticker plus the offer running that day. All financing is subject to credit approval. Ask us for the market comparison on any specific car before you decide.</li>
       <li><strong>Model years &amp; mileage.</strong> The 2012&ndash;2016 model-year range and 110,000-plus mileage figures describe what typically lands in this price tier; they are not a specification of current stock. Older-generation references (2010&ndash;2014 Outback, 2009&ndash;2013 Forester, 2013&ndash;2014 Crosstrek) describe the used market generally. Verify year, mileage, and condition on the individual vehicle.</li>
       <li><strong>Certified Pre-Owned.</strong> The Subaru 152-point inspection, 7-year/100,000-mile limited powertrain warranty, CARFAX report, and 24/7 roadside assistance apply to Subaru Certified Pre-Owned vehicles only, per Subaru of America program terms. Powertrain coverage runs from the vehicle's original in-service date, not the purchase date. Budget pre-owned vehicles under $10,000 are generally sold as-is or with remaining factory coverage only. See <a href="https://www.subaru.com" rel="noopener">subaru.com</a> for full program terms.</li>
       <li><strong>Safety &amp; recalls.</strong> Top Safety Pick recognition reflects Insurance Institute for Highway Safety (<a href="https://www.iihs.org" rel="noopener">iihs.org</a>) testing of specific Subaru models and model years, and does not apply to every used Subaru. Check open recalls for any VIN free at <a href="https://www.nhtsa.gov" rel="noopener">nhtsa.gov</a> before purchase.</li>
@@ -2264,6 +2359,37 @@
     prev.addEventListener('click', function () { track.scrollBy({ left: -step(), behavior: 'smooth' }); });
     next.addEventListener('click', function () { track.scrollBy({ left: step(), behavior: 'smooth' }); });
   });
+</script>
+<script>
+/* Impreza gallery carousel */
+(function () {
+  var CAPS = ["Impreza hatchback on the move. The five-door body is the one budget shoppers usually end up in, because it swallows more than the sedan for the same money.","The centre stack on a current Impreza. Cars in the under-$10,000 tier predate this screen, so expect a smaller display and a physical climate panel instead.","Steering-wheel controls for audio and cruise. Even the 2010-era Imprezas in this price band usually have both, which is more than most budget cars of that age offer.","The cabin from the passenger side. Sightlines and a low dash are a Subaru constant, and they carry back through the older generations you'll actually be shopping.","Seat fabric and bolstering. On a 12-to-15-year-old car this is the first thing to check in person, along with the driver's seat base and the bolster you slide across.","The overhead console. Newer cars carry SOS and connected-services buttons here; on an under-$10,000 Impreza you'll typically find map lights and a sunglasses bin.","Rear three-quarter view. Look hard at the tailgate seams and the wheel-arch edges on any older example, because coastal air in National City is unkind to both."];
+  document.querySelectorAll('[data-dsg]').forEach(function (g) {
+    var slides = g.querySelectorAll('.dsg-slide'),
+        thumbs = g.querySelectorAll('.dsg-thumb'),
+        cap    = g.querySelector('[data-dsg-cap]'),
+        count  = g.querySelector('[data-dsg-count]'),
+        i = 0;
+    function go(n) {
+      i = (n + slides.length) % slides.length;
+      slides.forEach(function (s, k) { k === i ? s.setAttribute('data-active', '') : s.removeAttribute('data-active'); });
+      thumbs.forEach(function (t, k) { t.setAttribute('aria-current', k === i ? 'true' : 'false'); });
+      if (cap && CAPS[i]) cap.textContent = CAPS[i];
+      if (count) count.textContent = (i + 1) + ' / ' + slides.length;
+    }
+    g.querySelectorAll('[data-step]').forEach(function (b) {
+      b.addEventListener('click', function () { go(i + parseInt(b.getAttribute('data-step'), 10)); });
+    });
+    thumbs.forEach(function (t) {
+      t.addEventListener('click', function () { go(parseInt(t.getAttribute('data-go'), 10)); });
+    });
+    g.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft')  { e.preventDefault(); go(i - 1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); go(i + 1); }
+    });
+    go(0);
+  });
+})();
 </script>
 </body>
 </html>
